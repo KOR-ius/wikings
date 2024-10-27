@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Wikings - À Propos</title>
+    <meta name="description" content="Découvrez l'histoire de Wikings et notre passion pour l'hydromel traditionnel. Rejoignez-nous dans notre aventure et savourez des élixirs inspirés de l'héritage nordique !" />
+
+</head>
+<body>
+  <div id="loader" role="alert" aria-live="assertive">
+      <div class="spinner" aria-hidden="true"></div>
+      <p>Chargement...</p>
+  </div>
+
+    <div class="page-content">
+        <header>
+            <div class="logo">Wikings</div>
+            <nav>
+                <div class="menu-toggle" aria-label="Ouvrir le menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="about.html">À Propos</a></li>
+                    <li><a href="products.html">Produits</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section>
+            <h2>Notre Histoire</h2>
+            <p>
+                Chez Wikings, nous célébrons l'héritage des ancêtres nordiques à travers l'hydromel, une boisson qui unit les générations. 
+                Fabriqué avec soin en Suisse, notre hydromel est plus qu'une boisson; c'est une invitation à se rassembler autour d'une table, à partager des rires, et à évoquer des récits d'antan.
+            </p>
+            <p>
+                Rejoignez-nous dans cette aventure, où chaque gorgée raconte une histoire d'union, de passion et de jeunesse. 
+                Éveillez le Viking en vous !
+            </p>
+        </section>
+
+        <section>
+            <h2>Histoire de l'Hydromel</h2>
+            <p>
+                L'hydromel, souvent considéré comme la boisson des dieux, a une histoire fascinante qui remonte à des milliers d'années. 
+                Cette boisson fermentée à base de miel et d'eau a été appréciée par de nombreuses cultures à travers le monde, mais elle occupe une place particulière dans la mythologie et l'histoire nordique.
+            </p>
+            <p>
+                Les Vikings, grands explorateurs et guerriers, consommaient de l'hydromel lors de leurs festins, le célébrant comme un symbole de force et de camaraderie. 
+                Pour eux, partager un verre d'hydromel n'était pas seulement une question de boisson, mais un rituel qui renforçait les liens entre amis et famille, rappelant les valeurs d'honneur et de loyauté.
+            </p>
+            <p>
+                L'hydromel était souvent associé aux dieux dans la mythologie nordique. Selon les sagas, il était offert à Odin pour obtenir sagesse et inspiration. 
+                En tant que boisson aux propriétés sacrées, il était également utilisé lors de cérémonies et de célébrations importantes.
+            </p>
+            <p>
+                Aujourd'hui, nous réinventons cette boisson ancestrale pour la rendre accessible aux amateurs modernes. 
+                Chez Wikings, nous sommes fiers de perpétuer cette tradition en offrant des variétés d'hydromel qui capturent l'essence des temps anciens tout en intégrant des saveurs contemporaines.
+            </p>
+        </section>
+
+        <div class="banner"></div>
+    </div>
+
+        <footer>
+            <p>&copy; 2024 Wikings. Tous droits réservés.</p>
+        </footer>
+    </div>
+
+    <!-- JavaScript pour cacher le loader après le chargement -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Simulez un chargement si nécessaire (par exemple, pour les images)
+            const img = new Image();
+            img.src = 'background.jpg'; // Vérifiez si l'image est en cache
+            img.onload = function() {
+                document.getElementById("loader").style.display = "none"; // Masquez le loader une fois l'image chargée
+            };
+            img.onerror = function() {
+                // Si une erreur se produit, vous pouvez masquer le loader après un délai
+                setTimeout(() => {
+                    document.getElementById("loader").style.display = "none";
+                }, 1000);
+            };
+        });
+    </script>
+</body>
+</html>
