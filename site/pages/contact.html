@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <title>Wikings - Contactez-Nous</title>
+    <meta name="description" content="Vous avez des questions ? Contactez-nous à l'adresse info@wikings.org et suivez-nous sur nos réseaux sociaux pour les dernières nouveautés !" />
+</head>
+<body>
+  <!-- Loader de chargement -->
+  <div id="loader" role="alert" aria-live="assertive">
+      <div class="spinner" aria-hidden="true"></div>
+      <p>Chargement...</p>
+  </div>
+
+    <div class="page-content">
+        <header>
+            <div class="logo">Wikings</div>
+            <nav>
+                <div class="menu-toggle" aria-label="Ouvrir le menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="about.html">À Propos</a></li>
+                    <li><a href="products.html">Produits</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section>
+            <h2>Contactez-nous</h2>
+            <p>
+                Si vous avez des questions ou des demandes, n'hésitez pas à nous contacter à l'adresse email suivante :
+                <a href="mailto:info@wikings.org">info@wikings.org</a>
+            </p>
+            <p>
+                Suivez-nous sur nos réseaux sociaux pour être à jour sur nos dernières nouveautés !
+            </p>
+        </section>
+
+        <!-- Bannière en bas de page -->
+        <div class="banner"></div>
+
+        <footer>
+            <p>&copy; 2024 Wikings. Tous droits réservés.</p>
+        </footer>
+    </div>
+
+    <!-- JavaScript pour cacher le loader après le chargement -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Simulez un chargement si nécessaire (par exemple, pour les images)
+            const img = new Image();
+            img.src = '../assets/images/background.jpg';
+            img.onload = function() {
+                document.getElementById("loader").style.display = "none"; // Masquez le loader une fois l'image chargée
+            };
+            img.onerror = function() {
+                // Si une erreur se produit, vous pouvez masquer le loader après un délai
+                setTimeout(() => {
+                    document.getElementById("loader").style.display = "none";
+                }, 1000);
+            };
+        });
+    </script>
+    <script src="../assets/js/script.js"></script>
+</body>
+</html>
+
